@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="youtube.png">
+        <meta name="author"  content="RATHNA PRAKASH">
+        <meta name="keyword" content="input,elements,attribute">
+        <meta name="description" content="html forms for begineers">
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="refresh" content="30">
+        <meta charset="UTF-8">
+        <title>HTML FORM INPUT AND ATTRIBUTE</title>
+        <style>
+            *{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            .select{
+                opacity: 0.1;
+            }
+            label{
+                font-weight: 500;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+        <legend><strong>FORM ELEMENTS AND ATTRIBUTE</strong></legend>
+        <form action="#" method="get" autocomplete="on" novalidate target="_self">
+            <label for="text">USERNAME : </label>
+            <input type="text" id="text" name="username" placeholder="ENTER THE USER NAME" maxlength="30" minlength="3" size="30">
+            
+            <br><br>
+            <label for="brand">BRAND :</label>
+            <select name="brand" id="brand" size="1">
+                <option class="select" autofocus>select-a-brand</option>
+                <option value="RE">ROYAL ENFIELD</option>
+                <option value="BAJAJ">BAJAJ</option>
+                <option value="YAMAHA">YAMAHA</option>
+                <option value="SUZUKI">SUZUKI</option>
+                <option value="TVS">TVS</option>
+                <option value="HONDA">HONDA</option>
+            </select>
+            <br><br>
+            <label for="textarea">Comment here:</label><br>
+            <textarea name="textarea" id="textarea" rows="6" cols="50"></textarea>
+            <br><br>
+            <label for="label">BIKES : </label>
+            <input type="text"id="label" list="bikes">
+            <datalist id="bikes">
+                <option value="CLASSIC 350">
+                <option value="CB 350">
+                <option value="CBR 250 RR">
+                <option value="HIMALAYAN 450">
+            </datalist>
+            <br><br>
+            <button type="button" onclick="alert('You are done')">Try something here</button>
+        </form>
+   
+        </fieldset>
+
+    </body>
+</html>
